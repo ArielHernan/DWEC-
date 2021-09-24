@@ -1,5 +1,6 @@
 
 function init() {
+    alert("Hola mundo");
     // Añadiendo Listeners(Escuchadores)
     /*
     let pulsador = document.getElementById('pulsador');
@@ -10,7 +11,7 @@ function init() {
     */
 
     // Añadiendo Listeners(Escuchadores)
-    alert("Hola mundo");
+
     document.getElementById("pulsador").addEventListener("click", function (e) {
         cambiarTexto();
         console.log(e.clientX);
