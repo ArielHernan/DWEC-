@@ -1,6 +1,8 @@
 
 function init() {
     alert("Hola mundo");
+    //añado una linea para probar
+    
     // Añadiendo Listeners(Escuchadores)
     /*
     let pulsador = document.getElementById('pulsador');
