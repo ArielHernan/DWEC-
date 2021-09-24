@@ -2,7 +2,7 @@
 function init() {
     alert("Hola mundo");
     //añado una linea para probar
-    
+    //añado otra
     // Añadiendo Listeners(Escuchadores)
     /*
     let pulsador = document.getElementById('pulsador');
