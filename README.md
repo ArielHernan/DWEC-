@@ -1,2 +1,2 @@
 # DWES
-Tareas de la aignatura DWES
+Tareas de la aignatura DWEC
