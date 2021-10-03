@@ -17,12 +17,10 @@ function radio(){
      return radio;
 }
 function base(){
-    var base= prompt("introduce la medida de la base");
-    return base;
+    return prompt("introduce la medida de la base");
 }
-function altura(){
-     var altura= prompt("introduce la medida de la altura");
-     return altura;
+function altura(){  
+     return prompt("introduce la medida de la altura");
 }
 
 /**funciones resultado--------------------------------------------------------------------- */
