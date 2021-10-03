@@ -1,21 +1,4 @@
-function areaTriangulo(base,altura){
-    return (base * altura)/2;
-}
-function perimetroTriangulo(lado1,lado2,lado3){
-    return lado1+lado2+lado3;
-}
-function perimetroCuadrado(lado1){
-    return lado1*4;
-}
-function areaRectangulo(base,altura){
-    return base*altura;
-}
-function areaCirculo(radio){
-    return 3.1416*(radio*radio);  
-}
-function longitudCircunferencia(radio){
-  return  2*radio*3.1416;
-}
+
 /*fucnciones captura de datos-------------------------------------------------*/
 function lado1(){
  var lado1=prompt("introduce la medida del lado uno");

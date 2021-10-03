@@ -1,4 +1,4 @@
-!/*
+/*
         crea  un archivo en Javascript que contenga únicamente fórmulas (con los 
         parámetros necesarios) para calcular los siguientes valores de cuerpos 
         geométricos:
@@ -16,10 +16,9 @@
 
 function areaTriangulo(base,altura){
     return (base * altura)/2;
-
 }
 
-function perimetrotriangulo(lado1,lado2,lado3){
+function perimetroTriangulo(lado1,lado2,lado3){
     return lado1+lado2+lado3;
 }
 
