@@ -1,12 +1,9 @@
 function areaTriangulo(base,altura){
     return (base * altura)/2;
-
 }
-
-function perimetrotriangulo(lado1,lado2,lado3){
+function perimetroTriangulo(lado1,lado2,lado3){
     return lado1+lado2+lado3;
 }
-
 function perimetroCuadrado(lado1){
     return lado1*4;
 }
@@ -17,35 +14,50 @@ function areaCirculo(radio){
     return 3.1416*(radio*radio);  
 }
 function longitudCircunferencia(radio){
-    2*radio*3.1416;
+  return  2*radio*3.1416;
 }
-function resultadoAreaTriangulo(){
-    alert(areaTriangulo());
-}
-
-
+/*fucnciones captura de datos-------------------------------------------------*/
 function lado1(){
-  lado1=prompt("introduce la medida del lado uno");
+ var lado1=prompt("introduce la medida del lado uno");
+ return lado1;
 }
 function lado2(){
-     lado2=prompt("introduce la medida del lado dos");
+var lado2=prompt("introduce la medida del lado dos");
+return lado2;
    } 
 function lado3(){
-     lado3=prompt("introduce la medida del lado tres");
+var lado3=prompt("introduce la medida del lado tres");
+return lado3;
    }
 function radio(){
-     radio= prompt("introduce la medida del radio");
+     var radio=prompt("introduce la medida del radio");
+     return radio;
 }
 function base(){
-     base= prompt("introduce la medida de la base");
+    var base= prompt("introduce la medida de la base");
+    return base;
 }
 function altura(){
-     radio= prompt("introduce la medida de la altura");
+     var altura= prompt("introduce la medida de la altura");
+     return altura;
 }
-function resultadoAreaTriangulo(){
-    base();
-    altura();
-    var resultadoAretri= areaTriangulo(base,altura)
-    alert(resultadoAretri);
 
+/**funciones resultado--------------------------------------------------------------------- */
+function resultadoAreaTriangulo(){
+    alert(areaTriangulo(base(),altura()));
+}
+function resultadoPerimetroTriangulo(){
+    alert("el resultado es: "+perimetroTriangulo(lado1(),lado2(),lado3()));
+}
+function resultadoPerimetroCuadrado(){
+    alert(perimetroCuadrado(lado1()));
+}
+function resultadoAreaRectangulo(){
+    alert(areaRectangulo(base(),altura()));
+}
+function resultadoAreaCirculo(){
+    alert(areaCirculo(radio()));
+}
+function resultadoLongitudCircunferencia(){
+    alert(longitudCircunferencia(radio()));
 }
