@@ -2,7 +2,7 @@
         crea  un archivo en Javascript que contenga únicamente fórmulas (con los 
         parámetros necesarios) para calcular los siguientes valores de cuerpos 
         geométricos:
-        area triangulo= base * altura / 2.
+        area triangulo= base*altura / 2.
         perimetro(suma de los tres lados)
          triangulo equilatero:3*l.
                    isósceles: 2*l+b
