@@ -14,11 +14,14 @@
         longitud circunferencia=2*r*pi
     */
 
-function areaTriangulo(base,altura){
-    return (base * altura)/2;
+function areaTriangulo(){
+    let base= parseInt(prompt("Introduce base")) ;
+    let altura= parseInt(prompt("Introduce la altura")) ;
+    return alert ((base * altura)/2);
 }
 
 function perimetroTriangulo(lado1,lado2,lado3){
+
     return lado1+lado2+lado3;
 }
 
