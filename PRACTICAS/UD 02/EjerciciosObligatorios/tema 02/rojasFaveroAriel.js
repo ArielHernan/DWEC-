@@ -1,11 +1,16 @@
 function Holamundo() {
+    // a través de document.getElementById cogemos el elemento de html 
+    // que tenga esa id y con el innerHTML insertamos en esa id lo que queramos
     document.getElementById("pulsador").innerHTML = "<h1 style='color:red'>¡Hola mundo!</h1>";
     console.log("hola mundo");
     alert("Hola mundo");
 }
+
 function introduceNumero() {
     console.log("Práctica 2.1");
     var continuar=true;
+    // utilizo el bucle while para hacer que se pueda repetir varias veces
+    //hasta que el usuario quiera
     while(continuar==true){
         let respuesta;
         let numero = prompt("introduce un número", "");
@@ -28,16 +33,16 @@ function introduceNumero() {
                 continuar=false;
             }
         }
-     }
+    }
 }
 
 function navidad() {
     console.log("Práctica 2.2");
     var fechaIntroducida = prompt("Introduce una fecha dd/mm")
-    if(fechaIntroducida==("24"+"/"+"12")){
-        document.getElementById("a2").innerHTML = "Es navidad"; 
+    if(fechaIntroducida==("24/12")){
+        document.getElementById("a2").innerHTML = "<h1>Es navidad</h1>"; 
     }else{
-        document.getElementById("a2").innerHTML = "NO Es navidad";
+        document.getElementById("a2").innerHTML = "<h1>NO Es navidad</h1>";
     }
 }
 
