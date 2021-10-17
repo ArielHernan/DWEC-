@@ -39,7 +39,7 @@ function introduceNumero() {
 function navidad() {
     console.log("Práctica 2.2");
     var fechaIntroducida = prompt("Introduce una fecha dd/mm")
-    if(fechaIntroducida==("24/12")){
+    if(fechaIntroducida==("25/12")){
         document.getElementById("a2").innerHTML = "<h1>Es navidad</h1>"; 
     }else{
         document.getElementById("a2").innerHTML = "<h1>NO Es navidad</h1>";
@@ -160,36 +160,87 @@ function tabla(){
 }
 
 function copiaTabla() {
-    //Con esto cogemos el elemento body
-  var body = document.getElementsByTagName("body")[0];
-  // Crea un elemento <table> y un elemento <tbody>
-  var tabla   = document.createElement("table");
-  var tblBody = document.createElement("tbody");
+    var filas= prompt("Introduce el número de filas:")
+    var celdas=prompt("Introduce el numero de celdas")
+    
+    document.write("<table>")
+    // Obtener la referencia del elemento body
+    var body = document.getElementsByTagName("body")[0];
 
-  for (var i = 0; i < 2; i++) {
+    // Crea un elemento <table> y un elemento <tbody>
+    var tabla   = document.createElement("table");
+    var tblBody = document.createElement("tbody");
+
+    // Crea las celdas
+    for (var i = 0; i < filas; i++) {
     // Crea las hileras de la tabla
     var hilera = document.createElement("tr");
 
-  // Crea las celdas
-    for (var j = 0; j < 2; j++) {
-      var celda = document.createElement("td");
-      var textoCelda = document.createTextNode("celda en la hilera "+i+", columna "+j);
-      celda.appendChild(textoCelda);
-      hilera.appendChild(celda);
+    for (var j = 0; j < celdas; j++) {
+        // Crea un elemento <td> y un nodo de texto, haz que el nodo de
+        // texto sea el contenido de <td>, ubica el elemento <td> al final
+        // de la hilera de la tabla
+        var celda = document.createElement("td");
+        var textoCelda = document.createTextNode("celda en la hilera "+i+", columna "+j);
+        celda.appendChild(textoCelda);
+        hilera.appendChild(celda);
     }
 
     // agrega la hilera al final de la tabla (al final del elemento tblbody)
-    tblBody.appendChild(hilera);
-  }
+     tblBody.appendChild(hilera);
+    }
 
-  // posiciona el <tbody> debajo del elemento <table>
-  tabla.appendChild(tblBody);
-  // appends <table> into <body>
-  body.appendChild(tabla);
-  // modifica el atributo "border" de la tabla y lo fija a "2";
-  tabla.setAttribute("border", "2");
+    // posiciona el <tbody> debajo del elemento <table>
+    tabla.appendChild(tblBody);
+    // appends <table> into <body>
+    body.appendChild(tabla);
+    // modifica el atributo "border" de la tabla y lo fija a "2";
+    tabla.setAttribute("border", "3");
 }
 
+function primos(){
+    var numero= prompt("Introduce un número y te diré si es primo o no");
+    var esPrimo=true;
+    for(let i=2;i<numero;i++){
+        if(numero%i==0){
+            esPrimo=false;
+        }else{
+            ePrimo=true;
+        }
+        if(esPrimo==true){
+            document.getElementById("a6").innerHTML ="El número es primo" ;
+        }else{
+            document.getElementById("a6").innerHTML ="El número NO es primo" ;
+        }
+    }
+}
+
+function suma() {
+    var op1= prompt("Introduce el primer operando");
+    var op2= prompt("Introduce el segundo operando");
+    //si no ponemos el parseInt no suma sino que concatena. uso el parseFloat porque así puedo meter números con decimales.
+    var suma=parseFloat(op1)+parseFloat(op2);
+    document.getElementById("a7").innerHTML= "La suma de los dos números es :"+suma;
+}
+function perimetro(){
+    var lado1= prompt("Introduce el primer lado del rectángulo:");
+    var lado2=prompt("INtroduce el segundo lado del rectángulo");
+
+    var resultado= 2*parseFloat(lado1)+2*parseFloat(lado2);
+    document.getElementById("a8").innerHTML= "El perímetro del rectángulo es:"+resultado;
+}
+
+function factorial() {
+    let numero=prompt("introduce un número y te daré el factorial");
+    let resultado = 1;
+    for(let i = numero; i>0; i--){
+        document.write(i+"     ");
+        resultado=resultado*i;
+        if(i==1){
+            document.write("                    "+resultado);
+        }
+    }
+}
 
 
 
