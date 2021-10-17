@@ -4,7 +4,7 @@ function Holamundo() {
     document.getElementById("pulsador").innerHTML = "<h1 style='color:red'>¡Hola mundo!</h1>";
     console.log("hola mundo");
     alert("Hola mundo");
-}
+}//fin funcion Holamundo
 
 function introduceNumero() {
     console.log("Práctica 2.1");
@@ -49,17 +49,149 @@ function navidad() {
 // Menos de 500€ y más de 10 años, incrementa por 3
 // Menos de 500€ y menos de 10 años, incrementa por 2
 // Más de 500€, lleve el tiempo que lleve, se queda igual
-function(sueldo){
+function sueldo(){
     let salario=prompt("introduce tu salario");
     let anti=prompt("introduce tu antigüedad en años");
 
-    if(salario<500&&ant>10){
+    if(salario<500 && anti>10){
         salario=salario*3;
         document.getElementById("a3").innerHTML = salario; 
-    }else if(salario<500&&ant<10){
+    }else if(salario<500 && anti<10){
         salario=salario*2;
+        document.getElementById("a3").innerHTML = salario;
     }else if(salario>500){
         salario=salario;
+        document.getElementById("a3").innerHTML = salario;
+    }
+}//Fin funcion sueldo()
+
+function nota() {
+    var calificacion = prompt("Introduce tu nota");
+    if(calificacion<3){
+        document.getElementById("a4").innerHTML ="Tu nota ha sido MUY DEFICIENTE" ;
+    }else if(calificacion<5){
+        document.getElementById("a4").innerHTML ="Tu nota ha sido  INSUFICIENTE" ;
+    }else if(calificacion<6){
+        document.getElementById("a4").innerHTML ="Tu nota ha sido BIEN" ;
+    }else if(calificacion<9){
+        document.getElementById("a4").innerHTML ="Tu nota ha sido NOTABLE" ;
+    }else if(calificacion<10){
+    document.getElementById("a4").innerHTML ="Tu nota es: SOBRESALIENTE, FELICIDADES!!";
+    }else if(calificacion==10){
+        document.getElementById("a4").innerHTML ="Tu nota es: MATRÍCULA DE HONOR MÁQUINA, FELICIDADES!!";
     }
 }
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------
+/*
+Aquí he intentado solucionar el problema a través de u switch ya que no me gusta anidar mas de 3 
+else if seguidos, pero no he conseguido que aceptara decimales
+function nota() {
+    var calificacion = prompt("Introduce tu nota");
+    var resultado;
+    calificacion = Number.parseFloat(calificacion);//he intentado hacer una conversion para que aceptara números con decimales pero n lo he conseguido
+    switch (calificacion) {
+        case 1:
+        case 2:
+            document.getElementById("a4").innerHTML ="Tu nota ha sido MUY DEFICIENTE" ;
+         
+            break;
+        case 3:    
+        case 4:
+            document.getElementById("a4").innerHTML = "Tu nota ha sido MUY INSUFICIENTE";
+           
+            break;
+        case 5:
+            document.getElementById("a4").innerHTML = "Tu nota ha sido BIEN";
+        
+            break;
+        case 6:
+        case 7:
+        case 8:
+            document.getElementById("a4").innerHTML = "Tu nota ha sido NOTABLE";
+           
+            break;
+        case 9:
+            document.getElementById("a4").innerHTML ="Tu nota es: SOBRESALIENTE";
+     
+            break;
+        case 10:
+            document.getElementById("a4").innerHTML ="Tu nota es: MATRÍCULA DE HONOR MÁQUINA, FELICIDADES!!";
+            break;  
+        
+      
+    }//FIN SWITCH
+    
+//}//FIN FUNCION nota()*/
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function pares(){
+    let numeroIntroducido=prompt("introduce un número");
+    let i=0;
+    for( i=2;i<numeroIntroducido; i+=2){
+       document.write("<h2>"+i+"</h2>");
+    }
+}
+
+function impares(){
+    let numeroIntroducido=prompt("introduce un número");
+    let i=1;
+    for( i=1;i<numeroIntroducido; i+=2){
+        document.write("<h2>"+i+"</h2>");
+     }
+}
+
+function tabla(){
+    var j= prompt("Introduce un número y te daré su tabla de multiplicar")
+    document.write("<h2>Tabla de multiplicar del "+ j +"</h2>");
+
+	document.write("<ul>");
+	//i++ significa i=i+1;
+
+	for(i = 1;i<=10;i++){
+		document.write("<li>");
+        document.write("<h3>");
+		document.write(j + "x " + i + "= " + j * i);
+        document.write("</h3>");
+		document.write("</li>");
+	}
+
+	document.write("</ul>");
+}
+
+function copiaTabla() {
+    //Con esto cogemos el elemento body
+  var body = document.getElementsByTagName("body")[0];
+  // Crea un elemento <table> y un elemento <tbody>
+  var tabla   = document.createElement("table");
+  var tblBody = document.createElement("tbody");
+
+  for (var i = 0; i < 2; i++) {
+    // Crea las hileras de la tabla
+    var hilera = document.createElement("tr");
+
+  // Crea las celdas
+    for (var j = 0; j < 2; j++) {
+      var celda = document.createElement("td");
+      var textoCelda = document.createTextNode("celda en la hilera "+i+", columna "+j);
+      celda.appendChild(textoCelda);
+      hilera.appendChild(celda);
+    }
+
+    // agrega la hilera al final de la tabla (al final del elemento tblbody)
+    tblBody.appendChild(hilera);
+  }
+
+  // posiciona el <tbody> debajo del elemento <table>
+  tabla.appendChild(tblBody);
+  // appends <table> into <body>
+  body.appendChild(tabla);
+  // modifica el atributo "border" de la tabla y lo fija a "2";
+  tabla.setAttribute("border", "2");
+}
+
+
+
+
+
 
