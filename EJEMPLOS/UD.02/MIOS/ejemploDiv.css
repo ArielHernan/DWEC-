@@ -1,0 +1,15 @@
+.box {
+    background-color: greenyellow;
+    float: left;
+    width: 600px;
+    margin: 1em;
+    border: 3px solid blue;
+  }
+  body {
+      background-color:black;
+  }
+  #resultado {
+      text-align: center;
+  }
+
+  

@@ -1,0 +1,18 @@
+.box {
+    background-color: #E7634E;
+    float: left;
+    width: 600px;
+    margin: 1em;
+    border: 3px solid blue;
+  }
+  body {
+      background-color:#E56C3B;
+  }
+  #resultado {
+      text-align: center;
+  }
+  a{
+      color: rgb(251, 246, 246);
+  }
+
+  
