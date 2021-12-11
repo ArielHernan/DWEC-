@@ -1,0 +1,48 @@
+#container {
+    display: flexbox;
+    display:inline-flex;
+    width: 90%;
+    background-color: black;
+    padding: 10px;
+    }
+    
+    .comun{
+        display: inline-block;
+        width: 45%;
+        background-color: whitesmoke ;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        font-size: 12px;
+    
+        color: #dd6fab
+    }
+    #derecha{
+        font-size:40px;
+    }
+    #derecha2{
+        font-size:20px;
+    }
+
+    #papelera {
+        display: flex;
+        background-color: whitesmoke ;
+        height: 40vh;
+        width: 90%;
+    }
+
+    #final {
+        background-image: url('img/papeleraVacia.jpg');
+        height: 40vh;
+        width: 40%;
+        background-repeat: no-repeat;
+        background-color: whitesmoke ;
+    }
+    #origen{
+        height: 40vh;
+        width: 40%;
+        background-repeat: no-repeat;
+        background-color: whitesmoke ;
+    
+    }
+
+   

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rojasFaveroArielObjetosActividades.css" type="text/css">
+    <script src="RojasFaveroArielObjetosActividades.js"></script>
+    <link rel="stylesheet"  type="text/css" href="RojasFaveroArielrojasFaveroArielObjetosActividades.css">
+    <title>Ejercicios, unidad 3</title>
+</head>
+<body>
+    <div id=container>
+         
+        <div id="izquierda" class="comun">
+            <h1>Ejercicio 1.</h1>
+
+            <p>En esta actividad tienes que solicitar el DNI, del usuario (sin la letra), cada 5 segundos, hasta
+                que se escriba la cadana “-1”.
+            </p>
+            <p>Una vez filalizada la captura de DNIs el programa mostrara una cadena con todas las letras</p>
+            
+             <input type="button" value="introduce número,calculo letra" onclick="temporizadorDeRetraso()"> 
+            
+            
+             <!------------------EJERCICIO 2----------------------------------------------------------------------->
+           
+            <h1>Ejercicio 2</h1>
+            <p>En esta actividad tienes que mostrar en el navegador:</p>
+            <p>- La fecha actual del sistema, una sola vez, pasados 5 segundos.</p>
+            <p>- La hora actual del sistema, cada 2 segundos.</p>
+            <p>Recuerda las instrucciones: ‘setTimeout’, ‘toUTCString’ y ‘toLocateTimeString</p>
+
+            <input type="button" value="introduce número,calculo letra" onclick="f()"> 
+             <!------------------EJERCICIO 3----------------------------------------------------------------------->
+
+            <h1>Ejercicio 3</h1>
+            <p>En esta actividad tienes que solicitar una letra de la A a la Z.</p>
+            <p>Después debes calcular todos los DNIs menores de tres cifras a los que pertenece esa letra.</p>
+            <p>El resultado será:</p>
+            
+            <p>- Cuantos DNIs tienen esa letra, y</p>
+            <p>- El listado de los mismos.</p>
+            <input type="button" value="introduce una letra, calculo los dni" onclick="numerosDNI()"> 
+
+            <!------------------EJERCICIO 4----------------------------------------------------------------------->
+
+            <h1>EJERCICIO 4</h1>
+
+            <p>En esta actividad debes calcular los números primos entre un rango.
+                Ejemplos: 2, 3, 5, … (aquellos únicamente divisibles, por sí mismos y por la unidad)
+                También debes determinar que números son palíndromos en ese rango.
+                Ejemplos: 11, 22, … 101, 121, … 10101, … 203302, …</p>
+
+            <form id="formulario2" action="#">
+                <textarea id="areaEscritura10"  cols = 30 rows = 1;></textarea>
+                <br>
+                <textarea id="areaEscritura11"  cols = 30 rows = 1;></textarea>
+                <br>
+                <input type="button" value="pulsa y obten palindromos" onclick="palindromos()">     
+                <input type="button" value="pulsa y obtén primos" onclick="primo()"> 
+            </form>
+            <!------------------EJERCICIO 5----------------------------------------------------------------------->
+            <h1>Ejercicio 5</h1>
+            <input type="button" value="pulsa y ordeno el nombre" onclick="string()"> 
+        </div> 
+        <div id="derecha" class="comun"></div>
+    </div>
+</body>
+</html>

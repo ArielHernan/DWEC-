@@ -1,0 +1,52 @@
+body{
+    padding:0;
+    margin:0;
+    background:linear-gradient(to right,black,grey );
+}
+
+.cuerpo{
+    display:block;
+    margin:auto;
+    margin-top:5%;
+    padding:20px;
+    
+    background-color:#E5D5C3;
+    width:345px;
+    height:550px;
+    border-radius:25px;
+}
+
+.cuerpo td button{
+    display:block;
+    width:30px;
+    height:30px;
+    font-size:15px;
+}
+#botonRandom {
+    font-size:8px;
+}
+
+#pantalla{
+    color: #0bf82b;
+    display:block;
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    width: 300px;
+    height:100px;
+    line-height:100px;
+    background-color:black;
+    border-radius:25px;
+    line-height: 100px;
+    font-family:Pixcelscr;
+}
+#letrasSuperiores {
+    display:block;
+    text-align:center;
+    width: 300px;
+    height:50px;
+}
+@font-face{
+	font-family:Pixcelscr;
+	src:url(Pixelscr.ttf);
+}

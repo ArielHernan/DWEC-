@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RojasFaveroArielCss.css" type="text/css">
+    
+    <link rel="stylesheet" href="rojasAriel.css" type="text/css">
+    <title>Ejercicios, unidad 3</title>
+</head>
+<body >
+    <div id=container>
+         
+        <div id="izquierda" class="comun">
+            <h1>Ejercicio 1</h1>
+            <p>1. ACTIVIDAD 1
+                En esta actividad debes trabajar con el evento que te permita capturar las coordenadas de
+                posicionamiento del ratón dentro de la ventana del navegador.
+                Para representar las coordenadas modifica el valor del elemento que creas conveniente en
+                el DOM.</p>
+                <p>Desplaza el ratón por la parte izquierda</p>
+            
+            <h1>Ejercicio 2</h1>
+            <p>2. ACTIVIDAD 2
+                En esta actividad debes trabajar con el evento que te permita capturar la pulsación del ratón
+                o de cualquier tecla.
+                Basándote en la actividad anterior:
+                - Modifica el valor del elemento que creas conveniente en el DOM para hacer que
+                cambie de color. Un color para la pulsación del ratón, otro color para la pulsación de
+                la tecla.
+                - Muestra los valores de la tecla pulsada, esto es: carácter y código, asociados a la
+                tecla.</p>
+            
+
+            <h1>Ejercicio 3</h1>
+            <p>3. ACTIVIDAD 3
+                En esta actividad debes pasar el ratón por encima de la imagen de una bombilla apagada.
+                Una vez el ratón invada la zona de la imagen, la bombilla deberá mostrarse encendida.
+                La bombilla se mostrará encendida hasta que el ratón deje de estar encima, momento en el
+                cuál la bombilla se volverá a mostrar apagada.</p>
+
+
+           <h1> Ejercicio 4</h1>
+           <p>4. ACTIVIDAD 4
+            En esta actividad debes arrastrar y soltar la imagen de una bola de papel dentro de la
+            imagen de una papelera vacía.
+            
+        </div> 
+        <div id="derecha" class="comun">
+            <p id = "movimiento"  onmousemove="position(event);">Pulsa aquí para captar el movimiento del ratón</p>
+            <P id = "resultado4">Aqui va el codigo de la letra</P>
+            <p id = "resultado2">Elemento que debe cambiar de color (azul=keypress,rojo=mousemove)  </p>
+            <p>
+                <img src="img/pic_bulboff.gif" alt="" id = "imagen" >
+            </p>
+            <div  id="papelera">
+                <div id="origen">
+                  <img id="imagen" src="img/papel.jpg" alt="FP Campanillas" draggable="true"></img>
+                 </div>
+              <div id="final">
+                  <div id="imagen">
+                  </div>
+              </div>
+  
+          </div>
+
+</div>
+    <script src="rojasAriel.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#container {
+    height:100vh;
+    width:100%;
+    display:flex;
+    background-color:rgb(247, 112, 34);
+    flex-direction:column;
+    align-items:center;
+}
+#resultado{
+    height:80vh;
+    width:50%;
+    border: 3px solid grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3%;
+  
+    background-image: url(./fotos/mujer9.jfif);
+  
+}

@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+#container {
+    height: 100vh;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+   background-color:    black;
+}
+#galeria{
+    display: flex;
+    flex-flow: row wrap;
+    height:100%;
+    width : 50%;
+    border: 3px solid ;
+    background-color: rgb(21, 27, 59);
+   
+}
+#imagen{
+    height:100%;
+    width : 30%;
+    border: 3px solid 
+}
+.imagenInterna{
+    border:2px solid green;
+    height: 20vh;
+    width:30%;
+
+}
+#imagenInterna1{
+    background-image: url("./fotos/mujer1.jfif");
+    
+}
+#imagenInterna2{
+    background-image: url("./fotos/mujer2.jfif");
+
+}
+#imagenInterna3{
+    background-image: url("./fotos/mujer3.jfif");
+
+}
+#imagenInterna4{
+    background-image: url("./fotos/mujer4.jfif");
+
+}
+#imagenInterna5{
+    background-image: url("./fotos/mujer5.jfif");
+
+}
+#imagenInterna6{
+    background-image: url("./fotos/mujer6.jfif");
+
+}
+#imagenInterna7{
+    background-image: url("./fotos/mujer7.jfif");
+
+}
+#imagenInterna8{
+    background-image: url("./fotos/mujer8.jfif");
+
+}
+#imagenInterna9{
+    background-image: url("./fotos/mujer9.jfif");
+
+}
+
+#resultado{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:3px solid purple;
+    height:80vh;
+    width:100%;
+}

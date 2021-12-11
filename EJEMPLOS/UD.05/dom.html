@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBAS DOM</title>
+</head>
+<body>
+    <p id="miElemento">parrafo a cambiar</p>
+    <div id="miDiv">esto es un div nuevo</div>
+    Cats:  <input name="animal" type="checkbox" value="Cats">
+    Dogs:  <input name="animal" type="checkbox" value="Dogs">
+
+<p>Click the button to check all checkboxes that have a name attribute with the value "animal".</p>
+<button onclick="myFunction()">Try it</button>
+    <script>
+        let elemento=document.getElementById("miElemento");
+        elemento.innerHTML="El html interno a cambiar de ese elemento";
+        let myDiv = document.getElementById("miDiv");
+        console.log("El html de miDiv es "+myDiv.innerHTML);
+        function myFunction() {
+        var x = document.getElementsByName("animal");
+        var i;
+        for (i = 0; i < x.length; i++) {
+            if (x[i].type == "checkbox") {
+            x[i].checked = true;
+            }
+        }
+        }
+
+    </script>
+</body>
+</html>

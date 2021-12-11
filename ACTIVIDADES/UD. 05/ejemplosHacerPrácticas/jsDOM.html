@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="./jsDOM.css" />
+	<title>Primer ejercicio</title>
+</head>
+
+<body>
+	<h1>Prácticas UD5 DOM.</h1>
+	<div id="contenedor">
+		<!-- CUIDADO, AQUÍ HAY UN DIV DIV[0]-->
+		<div id="caja">
+			<h2>Ejemplo</h2>
+			<h3>Un ejemplo para ver el contenido de un etiqueta</h3>
+			<input id="pulsa" type="button" value="Púlsame" />
+			<input id="borra" type="button" value="Borrar" />
+			<p id="texto"></p>
+
+		</div>
+		<!-- CUIDADO, AQUÍ HAY UN DIV DIV[1]-->
+		<div id="caja31">
+			<h2>Práctica 3.1</h2>
+			<h3>Accedo mediante el identificador</h3>
+			<input id="pulsa31" type="button" value="Púlsame" />
+			<p id="texto31">Pulsa el botón y el parrafo cambiará</p>
+		</div>
+		<!-- CUIDADO, AQUÍ HAY UN DIV DIV[2]-->
+		<div id="caja32">
+			<h2 class="ejer32">Práctica 3.2</h2>
+			<h3 class="ejer32">Accedo mediante la etiqueta. Número de elementos y párrafos</h3>
+			<input id="pulsa32" class="ejer32" type="button" value="Púlsame" />
+			<p id="texto32a" class="ejer32">Pulsa el botón y el parrafo cambiará</p>
+			<p id="texto32b" class="ejer32"></p>
+			<p id="texto32c" class="ejer32"></p>
+			<p id="texto32d" class="ejer32"></p>
+		</div>
+
+		<div id="caja33">
+			<h2 name="ejer33">Práctica 3.3</h2>
+			<h3 name="ejer33">Accedo mediante el nombre. Número de elementos y párrafos</h3>
+			<input type="button" id="pulsa33" name="ejer33" value="Púlsame" /><br />
+			<label>Alumno 1:</label>
+			<input type="checkbox" id="check33a" name="ejer33" /><br />
+			<label>Alumno 2:</label>
+			<input type="checkbox" id="check33b" name="ejer33" /><br />
+			<label>Alumno 3:</label>
+			<input type="checkbox" id="check33c" name="ejer33" /><br />
+			<p id="texto33"></p>
+		</div>
+
+		<div id="caja41">
+			<h2>Práctica 4.1</h2>
+			<h3>Eliminar un elemento hijo en un nodo padre</h3>
+			<input id="primero" type="button" value="Eliminar primero" />
+			<input id="ultimo" type="button" value="Eliminar último" />
+			<div id="div41">
+				<p id="parrafo41a">Parrafo 1</p>
+				<p id="parrafo41b">Parrafo 2</p>
+				<p id="parrafo41c">Parrafo 3</p>
+			</div>
+			<ul id="lista41">
+				<li>Carne</li>
+				<li>Pescado</li>
+				<li>Verdura</li>
+			</ul>
+			<p id="texto41"></p>
+		</div>
+
+		<div id="caja42">
+			<h2>Práctica 4.2</h2>
+			<h3>Creación de elementos hijo en un nodo padre</h3>
+			<input id="creaP" type="button" value="Crear parrafos" />
+			<input id="creaL" type="button" value="Crear elementos" />
+			<p id="parrafo42"></p>
+			<ul id="lista42"></ul>
+			<p id="texto42"></p>
+		</div>
+		<script src="./jsDOM.js" type="text/javascript"></script>
+</body>
+
+</html>

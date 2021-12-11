@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rojasArielCalculadora.css">
+    <title>calculadora</title>
+</head>
+<body>
+    <table class ="cuerpo">
+        <tr>
+            <td colspan="4"><span id="letrasSuperiores">CASIO fx-120 <br>cientific calculator</span></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+               <div id="pantalla"></div>
+              </td>
+        </tr>
+        <tr>
+            <td><button name = "valorOperacion"> +/- </button> </td>
+            <td><button name = "valorOperacion"> . </button> </td>
+        </tr>
+        <tr>
+            
+            <td><button name = "valorOperacion"> sqr </button> </td>
+            <td><button name = "valorOperacion">  %  </button> </td>
+            <td><button name = "valorOperacion">  !  </button> </td>
+            <td><button name = "valorOperacion">  res </button> </td>
+        </tr>
+        <tr>
+            <td><button name = "valorOperacion"> inv </button> </td>
+            <td><button name = "valorOperacion"> pi  </button> </td>
+            <td><button name = "valorOperacion">  e  </button> </td>
+            <td><button id="botonRandom" name = "valorOperacion">random </button> </td>
+        </tr>
+
+        <tr>
+            <!--Le pongo el mismo nombre a todos los botones para más adelante, en en
+            javascript hacer un array y recorrerlos, así me ahorro multitud de eventos onclick-->
+
+            <td><button name = "valorNumero"> 7 </button></td>
+            <td><button name = "valorNumero"> 8 </button></td>
+            <td><button name = "valorNumero"> 9 </button></td>
+            <td><button name = "valorOperacion"> / </button></td>
+        </tr>
+        <tr>
+            <td><button name = "valorNumero"> 4 </button></td>
+            <td><button name = "valorNumero"> 5 </button></td>
+            <td><button name = "valorNumero"> 6 </button></td>
+            <td><button name = "valorOperacion"> x </button></td>
+        </tr>
+        <tr>
+            <td><button name = "valorNumero"> 1 </button></td>
+            <td><button name = "valorNumero"> 2 </button></td>
+            <td><button name = "valorNumero"> 3 </button></td>
+            <td><button name = "valorOperacion"> - </button></td>
+        </tr>
+        <tr>
+            <td><button name = "igual">       = </button></td>
+            <td><button name = "delete">      C </button></td>
+            <td><button name = "valorNumero"> 0 </button></td>
+            <td><button name = "valorOperacion"> + </button></td>
+        </tr>
+    </table>
+    <script src="rojasArielCalculadora.js"></script>
+</body>
+</html>

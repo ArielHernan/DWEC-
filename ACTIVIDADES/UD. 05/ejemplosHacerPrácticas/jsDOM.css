@@ -1,0 +1,41 @@
+body {
+    margin: 0 auto;
+}
+
+#contenedor {
+    padding-left: 0.5em;
+    text-align: left;
+    width: 900px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+/*
+#caja,
+#caja31,
+#caja32 {
+    float: left;
+    width: 275px;
+    height: 375px;
+    border: thin solid silver;
+
+
+}
+
+#caja33 {
+    clear: both;
+    width: 275px;
+    height: 250px;
+    border: thin solid silver;
+}
+
+#caja41, #caja42 {
+    float: left;
+    width: 275px;
+    height: 250px;
+    border: thin solid silver;
+}
+*/

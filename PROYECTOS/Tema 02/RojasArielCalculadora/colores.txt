@@ -1,0 +1,5 @@
+color numeros pantalla resultado: #9BDBD7
+color carcasa metal: #E5D5C3
+color botones de arriba: #B6A081(un gris claro)
+color botones inferior derecha(tipo marron)
+botones superior derecha(naranja) #FA8756

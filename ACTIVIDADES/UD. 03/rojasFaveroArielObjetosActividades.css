@@ -1,0 +1,23 @@
+#container {
+    display: flexbox;
+    display:inline-flex;
+    width: 90%;
+    background-color: black;
+    padding: 10px;
+    }
+    .comun{
+        display: inline-block;
+        width: 45%;
+        background-color: whitesmoke ;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        font-size: 20px;
+    
+        color:slategray;
+    }
+    #derecha{
+        font-size:40px;
+    }
+    #derecha2{
+        font-size:40px;
+    }

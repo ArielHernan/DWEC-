@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rojasArielFormularios.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>formularios</title>
+</head>
+<body>
+    <div id="container">
+        <div id="ej1">
+            <p>
+                1. ACTIVIDAD 1
+                En esta actividad debes crear un formulario donde al introducir un DNI, este se valide
+                comprobando que la letra introducida corresponde al número introducido.
+                Premisas que ha de cumplir el formulario:
+                </p>
+                <p>
+                - La validación se producirá al perder el foco del campo texto.
+                </p>
+                <p>
+                - Si la validación no es correcta, el envío del formulario debe ser cancelado.
+                </p>
+                <br>
+
+            <form class="row g-3">
+                <div class="col-auto">
+                 
+                  <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="introduce un DNI">
+                </div>
+                <div class="col-auto">
+    
+                  <input type="text" class="form-control" id ="inputDni" placeholder="DNI">
+                </div>
+                <div class="col-auto">
+                  <button  id="botonInicioFuncion"  class="btn btn-primary mb-3">Confirm identity</button>
+                </div>
+              </form>
+        </div>
+
+        <div id="ej2">
+            <p>
+                En esta actividad debes crear un formulario donde al introducir una dirección de email, esta
+                se valide comprobando si cumple cierto formato.
+            </p>
+                Premisas que ha de cumplir el formulario, así como el formato de validación del email:
+            </p>
+            <p>
+                - Validar si el email tiene el formato, texto@servidor.dominio
+            </p>
+            <p>
+                - Además, el texto ‘servidor.dominio’ debe ser comprobado con un array previamente
+                  establecido en el código.
+            </p>
+            <p>
+                Ejemplo ‘servidor.dominio’
+                let listaServidores=["terra.es","google.com","marca.es","yahoo.es"];
+            </p>
+            <br>
+            <form  id ="formulario" class="row g-3">
+                <div class="col-auto">
+                 
+                  <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="introduce un mail">
+                </div>
+                <div class="col-auto">
+                  <input type="text" class="form-control" id ="inputMail2" placeholder="email">
+                </div>
+                <div class="col-auto">
+                  <button  id="botonInicioFuncion2"  class="btn btn-primary mb-3">Confirma  email</button>
+                </div>
+              </form>
+             
+
+        </div>
+        <div id="ej3">
+            <p>
+                3. ACTIVIDAD 3
+            </p>
+            
+            <p>
+                En esta actividad debes crear un formulario donde al introducir dos campos de texto, estos
+            se validen el uno con el otro de tal modo que:
+            </p>
+           <p>
+            - El formulario se enviará si y solo si (if and only if) uno de los campos de texto es un
+            anagrama del otro.
+           </p>
+            <p>
+                - Se ignoraran mayúsculas y minúsculas, así como espacios.
+            </p>
+            <form  class="row g-3">
+                <div class="col-auto">
+                  <input type="text" class="form-control" id ="palabra1" placeholder="palabra 1">
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control" id ="palabra2" placeholder="palabra 2">
+                  </div>
+                <div class="col-auto">
+                  <button  id="botonInicioFuncion3"  class="btn btn-primary mb-3">comprueba anagrama</button>
+                </div>
+              </form>
+        </div>
+        <div id="ej4">
+            <form action="" id="formulario2">
+                <select name="primero" id="primero" class="form-select" required>
+                  <option value="Alicante">Alicante</option>
+                  <option value="Castellon">Castellon</option>
+                  <option value="Valencia">Valencia</option>
+                </select>
+                <select name="segundo" id="segundo" class="form-select" required>
+                  <option value="" class="claseSegundo" >Select no seleccionado</option>
+                </select>
+              </form>
+        </div>
+    </div>
+    <script src ="rojasArielFormularios.js"></script>
+</body>
+</html>

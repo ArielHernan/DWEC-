@@ -1,0 +1,50 @@
+#container {
+    display:inline-flex;
+    width: 90%;
+    background-color: black;
+    padding: 10px;
+    height:auto;
+   
+    }
+    
+    .comun{
+        display: inline-block;
+        width: 45%;
+        background-color: whitesmoke ;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        font-size: 12px;
+    
+        color: black;
+    }
+    .fondoAzul{
+        background-color:blue;
+        color: black;
+        padding-top: 5%;
+        height:10%;
+        text-align:center;
+        
+    }
+    #derecha{
+        display:flex;
+        flex-direction: column;
+        font-size:12px;
+    }
+    #divej1{
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        width:auto;
+        height:auto;
+    }
+
+    #dentroIzquierda{
+        width:100%;
+        font-size:13px;
+     
+    }
+    #izquierda{
+        width:60%;
+    }
+    li{
+        list-style: none;
+    }
+
